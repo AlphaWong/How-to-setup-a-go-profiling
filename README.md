@@ -8,7 +8,7 @@ Help developers profile their go application
 1. github.com/uber/go-torch
 
 # Code level
-Please ensure following handler have been enable by your application in http server.
+Please ensure following handler have been enabled by your application in http server.
 ```go
 imports (
   ...
