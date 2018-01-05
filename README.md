@@ -54,8 +54,7 @@ Entering interactive mode (type "help" for commands)
 ```
 
 # Output
-![Call map](http://og0usnhfv.bkt.clouddn.com/profile_simple1.png)
-
+![Call map](https://i.imgur.com/ibhsK7a.png)
 # Show flame graph
 ```sh
 # It will capture 30s incoming call
@@ -63,7 +62,7 @@ Entering interactive mode (type "help" for commands)
 go-torch -u http://localhost:9090 -t 30
 ```
 # Output
-![Cpu map](http://og0usnhfv.bkt.clouddn.com/flame1.png)
+![Cpu map](https://i.imgur.com/6VtscMY.png)
 
 # How to read
 - x-axis means the cpu time
