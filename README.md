@@ -37,6 +37,17 @@ func someFunction(){
 1. `pacaur -S graphviz`
 1. `pprof -http=127.0.0.1:9000 /home/alpha/pprof/pprof.main.samples.cpu.001.pb.gz`
 
+# Run the pprof in pi
+```
+from arm32v7/golang
+
+RUN go get github.com/google/pprof
+RUN apt update && apt install graphviz -y
+
+ENTRYPOINT ["pprof"]
+```
+1. run `docker run -it -p 9000:9000 --network="host" -v $(pwd):/tmp go-pprof -http=10.10.8.111:9000 /tmp/pprof.main.samples.cpu.001.pb.gz`
+
 # Installation
 1. ```git clone https://github.com/brendangregg/FlameGraph.git```
 1. ```cp flamegraph.pl /usr/local/bin```
