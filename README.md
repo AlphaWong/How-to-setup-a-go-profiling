@@ -6,6 +6,7 @@ Help developers profile their go application
 # Tools
 1. FlameGraph
 1. github.com/uber/go-torch
+1. `pacaur -S graphviz`
 
 # Code level
 Please ensure following handler have been enabled by your application in http server.
