@@ -35,7 +35,7 @@ func someFunction(){
 1. `go tool pprof --seconds 25 http://localhost:9090/debug/pprof/profile?seconds=25`
 1. `go get github.com/google/pprof`
 1. `pacaur -S graphviz`
-1. pprof -http=127.0.0.1:9000 /home/alpha/pprof/pprof.main.samples.cpu.001.pb.gz
+1. `pprof -http=127.0.0.1:9000 /home/alpha/pprof/pprof.main.samples.cpu.001.pb.gz`
 
 # Installation
 1. ```git clone https://github.com/brendangregg/FlameGraph.git```
