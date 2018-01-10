@@ -5,8 +5,9 @@ Help developers profile their go application
 
 # Tools
 1. FlameGraph
-1. github.com/uber/go-torch
+1. `github.com/uber/go-torch`
 1. `pacaur -S graphviz`
+1. `github.com/google/pprof`
 
 # Code level
 Please ensure following handler have been enabled by your application in http server.
@@ -27,6 +28,14 @@ func someFunction(){
   ...
 }
 ```
+
+# Native solution ( go 1.10 )
+1. ```git clone https://github.com/brendangregg/FlameGraph.git```
+1. ```cp flamegraph.pl /usr/local/bin```
+1. `go tool pprof --seconds 25 http://localhost:9090/debug/pprof/profile?seconds=25`
+1. `go get github.com/google/pprof`
+1. `pacaur -S graphviz`
+1. pprof -http=127.0.0.1:9000 /home/alpha/pprof/pprof.main.samples.cpu.001.pb.gz
 
 # Installation
 1. ```git clone https://github.com/brendangregg/FlameGraph.git```
